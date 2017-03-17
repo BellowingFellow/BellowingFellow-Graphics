@@ -19,7 +19,7 @@
 	}
 	
 	/* hide nav link when menu will overlap */
-	@media (max-width: 1520px) {
+	@media (max-width: 920px) {
 		a#headerLink {
 			display: none !important;
 		}
