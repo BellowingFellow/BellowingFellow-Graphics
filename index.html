@@ -2,83 +2,130 @@
 <html>
 	<head>
 		<title>BellowingFellow Graphics</title>
-		<link rel="shortcut icon" href="img/favicon.ico?dev1" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="css/main.css?revision=2-7-2017" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		
-		
-		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
-		<!-- twitch api functions -->
-		<script src="js/streamFunctions.js?revision=1-7-2017" type="text/javascript"></script>
-		<script src="js/status.js?revision=1-18-2017" type="text/javascript"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/icomoon.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body class="index">
+	<body class="homepage">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt">
-					<h1 id="logo">
-					<a href="https://www.twitch.tv/bellowingfellow"><img id="logoLarger" src="img/logo.png" style="width: 45px; height: 45px; vertical-align: middle; margin-right: 10px;" /></a>
-					<a href="https://www.twitch.tv/bellowingfellow"><img id="logoSmaller" src="img/logo-smaller.png" style="vertical-align: middle; margin-right: 10px;" /></a>
-					<a id="headerLink" href="https://www.twitch.tv/bellowingfellow" target="_blank"><span>BellowingFellow</span>&nbsp;Graphics</a>
-					</h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="#">Placeholder</a></li>
-							<li><a href="#">Placeholder</a></li>
-							<li><a href="#">Placeholder</a></li>
-							<li><a href="#">Placeholder</a></li>
-						</ul>
-					</nav>
-				</header>
+				<div id="header-wrapper">
+					<div id="header" class="container">
 
-			<!-- Banner -->
-				<section class="banner" style="z-index: 100;">
-				<div id="banner">
-				<!-- desktop inner -->
-					<div class="innerBlock">
-						<header>
-							<h4>Graphics Portfolio</h4>
-						</header>
-						<h3 class="constRotate">Coming soon!</h3>
-						
-						<hr style="background-color: white;" />
+						<!-- Logo -->
+							<h1 id="logo"><a href="./">BellowingFellow</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="prebreak"><a href="portfolio">Graphics Portfolio</a></li>
+									<li><a href="#">Store</a></li>
+									<li class="break"><a href="order">Place an Order</a></li>
+									<li><a href="terms">Terms and Conditions</a></li>
+								</ul>
+							</nav>
 
 					</div>
 
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2>BellowingFellow Graphics</a></h2>
+								<hr style="width: 30em;" />
+							</header>
+							<ul class="actions">
+								<li><a href="portfolio" class="button">View Portfolio</a></li>
+							</ul>
+						</section>
+
 				</div>
-				</section>
+
+			<!-- Features 1 -->
+				<div class="wrapper">
+					<div class="container">
+
+						<h1 class="h1-big">Commissions are currently open!</h1>
+
+						<p class="orderButtonWrapper"><a id="orderButton" href="order" class="button">Place an Order</a></p>
+
+						<h2 class="formHeader">Questions?</h2>
+
+						<div class="row">	
+							<section class="6u 12u(narrower)">	
+								<form method="post" action="#">
+									<div class="row 50%">
+										<div class="6u 12u(mobile)">
+											<input name="name" placeholder="Name" type="text" />
+										</div>
+										<div class="6u 12u(mobile)">
+											<input name="email" placeholder="Email" type="text" />
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<textarea name="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="6u 12u(narrower)">
+								<div class="row 0%">
+									<ul class="divided icons 6u 12u(mobile)">
+										<li class="icon-discord"><span class="extra">BellowingFellow#6387</span></li>
+										<li class="icon fa-twitter"><a href="https://twitter.com/bellowingfellow"><span class="extra">twitter.com/</span>BellowingFellow</a></li>
+										<li class="icon fa-twitch"><a href="https://www.twitch.tv/bellowingfellow"><span class="extra">twitch.tv/</span>BellowingFellow</a></li>
+									</ul>
+
+								</div>
+							</section>
+						</div>
+
+
+					</div>
+				</div>
+
+			<!-- Promo -->
+				<div id="promo-wrapper">
+					<section id="promo">
+						<h2>BellowingFellow streams on Twitch, too!</h2>
+						<a href="https://bellowingfellow.com" class="button">Check it out</a>
+					</section>
+				</div>
+
 
 			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://www.twitch.tv/bellowingfellow" class="fa fa-twitch"></a></li>
-						<li><a href="https://twitter.com/bellowingfellow" class="fa fa-twitter"></a></li>
-						<li><a href="https://www.youtube.com/channel/UCR8kI87wsdHT4cVZyqsUVOg" class="fa fa-youtube-play"></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Copyright &copy; BellowingFellow 2017. <br class="visible-phone" />All rights reserved.</li>
-						<li>Developed by <a href="https://mattunderscore.us">mattunderscore</a></li>
-						<li>Designed by <a href="https://html5up.net">HTML5 UP</a></li>
-						<li><a href="https://github.com/BellowingFellow/BellowingFellow/issues">Report an issue</a></li>
-					</ul>
-				</footer>
+				<div id="footer-wrapper">
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>Copyright &copy; BellowingFellow 2017. All rights reserved.</li>
+							<li>Developed by: <a href="https://mattunderscore.us">mattunderscore</a></li>
+							<li>Designed by: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.dropotron.min.js"></script>
-			<script src="js/jquery.scrolly.min.js"></script>
-			<script src="js/jquery.scrollgress.min.js"></script>
-			<script src="js/skel.min.js"></script>
-			<script src="js/util.js"></script>
-			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
-			<script src="js/main.js"></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->		
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
