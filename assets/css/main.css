@@ -1608,6 +1608,18 @@
 		margin-bottom: 2em;
 	}
 
+	.hidden-phone {
+		display: inherit;
+	}
+
+	@media (max-width: 1200px) {
+		.hidden-phone {
+				display: none !important;
+			}
+	}
+
+	
+
 	.discord-icon {
 		background-image: url("images/discord.png");
 		height: 2em;
