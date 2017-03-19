@@ -1598,6 +1598,12 @@
 		text-decoration: none;
 	}
 
+	small {
+		font-size: 0.75em;
+		line-height: 0.5em;
+		color: #1d72f9;
+	}
+
 	.major h1 {
 		font-size: 2.5em;
 		line-height: 2em;
