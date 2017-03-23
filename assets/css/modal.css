@@ -14,7 +14,7 @@
 			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 		}
 
-		#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover {opacity: 0.85;}
+		#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover {opacity: 0.85;}
 		
 		#img04, #img05 {
 			max-width: 60%;
