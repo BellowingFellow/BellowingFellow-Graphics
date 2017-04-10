@@ -14,10 +14,10 @@
 			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 		}
 
-		#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover {opacity: 0.85;}
+		.modalImgPre:hover {opacity: 0.85;}
 		
-		#img04, #img05, #img06 {
-			max-width: 60%;
+		.modalWide {
+			max-width: 60% !important;
 		}
 		
 		/* Modal Content (image) */
