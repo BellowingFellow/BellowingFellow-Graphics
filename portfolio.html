@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Portfolio - BellowingFellow Graphics</title>
@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css?2" />
-		<link rel="stylesheet" href="assets/css/modal.css?5" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/portfolio.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -36,90 +37,144 @@
 
 			<!-- Main -->
 				<div class="wrapper">
+                    <noscript>
+                        <p style="color: red; font-size: 1.2em; text-align: center"><i class="fa fa-exclamation-triangle"></i> It appears you have JavaScript disabled. As a result, functionality of this page is reduced.</p>
+                    </noscript>
 					<div class="container portfolio">
+                        <div style="text-align: center;">
+                            <span style="font-size: 1.2em;">Displaying:&nbsp;</span>
+                            <select id="portSelect" name="displaying" onchange="portDisplay()">
+                                <option name="Everything">Everything</option>
+                                <option name="Banners">Banners</option>
+                                <option name="Overlays">Overlays</option>
+                                <option name="Packages">Full Packages</option>
+                                <option name="Thumbnails">Thumbnails</option>
+                            </select>
+                        </div>
+
+                        <div id="portBanners">
 						<h1 style="text-align: center">Banners</h1>
 						<p class="hidden-phone">Click to enlarge</p>
-						<div class="row">	
-							<section class="12u 12u(narrower) feature twitch-banners">
+                            <div class="row">
+                                <section class="12u 12u(narrower) feature twitch-banners">
 
-								<div class="image-wrapper first">
-									<img src="img/portfolio/banner/1.png" alt="" class="modalImgPre image featured first"/>
-										<div class="modalDiv modal hidden-phone">
-										<span class="close">&times;</span>
-										<img class="modalImg modal-content">
-										<div class="modalCaption"></div>
-									</div>
-								</div>
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/banner/1.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
 
-								<div class="image-wrapper first">
-									<img src="img/portfolio/banner/2.png" alt="" class="modalImgPre image featured first"/>
-										<div class="modalDiv modal hidden-phone">
-										<span class="close">&times;</span>
-										<img class="modalImg modal-content">
-										<div class="modalCaption"></div>
-									</div>
-								</div>
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/banner/2.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
 
-								<div class="image-wrapper first">
-									<img src="img/portfolio/banner/3.png" alt="" class="modalImgPre image featured first"/>
-										<div class="modalDiv modal hidden-phone">
-										<span class="close">&times;</span>
-										<img class="modalImg modal-content">
-										<div class="modalCaption"></div>
-									</div>
-								</div>
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/banner/3.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
 
-								<div class="image-wrapper first">
-									<img src="img/portfolio/banner/4.png" alt="" class="modalImgPre image featured first"/>
-										<div class="modalDiv modal hidden-phone">
-										<span class="close">&times;</span>
-										<img class="modalImg modal-content">
-										<div class="modalCaption"></div>
-									</div>
-								</div>
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/banner/4.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
 
-							</section>
+                                </section>
+                            </div>
 						</div>
 
-						<h1 style="text-align: center">Full Packages</h1>
-						<p class="hidden-phone">Click to enlarge</p>
-						<div class="row">
-							<section class="12u 12u(narrower) feature twitch-banners">			
-								<div class="image-wrapper first">
-									<img src="img/portfolio/full/1.png" alt="" class="modalImgPre image featured first"/>
-										<div class="modalDiv modal hidden-phone">
-										<span class="close">&times;</span>
-										<img class="modalImg modalWide modal-content">
-										<div class="modalCaption"></div>
-									</div>
-								</div>
+                        <div id="portOverlays">
+                            <h1 style="text-align: center">Overlays</h1>
+                            <p class="hidden-phone">Click to enlarge</p>
+                            <div class="row">
+                                <section class="12u 12u(narrower) feature twitch-banners">
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/overlay/1.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modalWide modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
 
-								<div class="image-wrapper first">
-									<img src="img/portfolio/full/2.png" alt="" class="modalImgPre image featured first"/>
-										<div class="modalDiv modal hidden-phone">
-										<span class="close">&times;</span>
-										<img class="modalImg modalWide modal-content">
-										<div class="modalCaption"></div>
-									</div>
-								</div>	
-							</section>
-						</div>
+                        <div id="portPackages">
+						    <h1 style="text-align: center">Full Packages</h1>
+						    <p class="hidden-phone">Click to enlarge</p>
+						    <div class="row">
+							    <section class="12u 12u(narrower) feature twitch-banners">			
+								    <div class="image-wrapper first">
+									    <img src="img/portfolio/full/1.png" alt="" class="modalImgPre image featured first"/>
+										    <div class="modalDiv modal hidden-phone">
+										    <span class="close">&times;</span>
+										    <img class="modalImg modalWide modal-content">
+										    <div class="modalCaption"></div>
+									    </div>
+								    </div>
 
-						<h1 style="text-align: center">Overlays</h1>
-						<p class="hidden-phone">Click to enlarge</p>
-						<div class="row">
-							<section class="12u 12u(narrower) feature twitch-banners">			
-								<div class="image-wrapper first">
-									<img src="img/portfolio/overlay/1.png" alt="" class="modalImgPre image featured first"/>
-										<div class="modalDiv modal hidden-phone">
-										<span class="close">&times;</span>
-										<img class="modalImg modalWide modal-content">
-										<div class="modalCaption"></div>
-									</div>
-								</div>	
-							</section>
-						</div>
+								    <div class="image-wrapper first">
+									    <img src="img/portfolio/full/2.png" alt="" class="modalImgPre image featured first"/>
+										    <div class="modalDiv modal hidden-phone">
+										    <span class="close">&times;</span>
+										    <img class="modalImg modalWide modal-content">
+										    <div class="modalCaption"></div>
+									    </div>
+								    </div>	
+							    </section>
+						    </div>	
+                        </div>
+                        
+                        <div id="portThumbnails">
+                            <h1 style="text-align: center">Thumbnails</h1>
+                            <p class="hidden-phone">Click to enlarge</p>
+                            <div class="row">
+                                <section class="12u 12u(narrower) feature twitch-banners">
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/thumbnail/1.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modalWide modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
 
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/thumbnail/2.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modalWide modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="image-wrapper first">
+                                        <img src="img/portfolio/thumbnail/3.png" alt="" class="modalImgPre image featured first" />
+                                        <div class="modalDiv modal hidden-phone">
+                                            <span class="close">&times;</span>
+                                            <img class="modalImg modalWide modal-content">
+                                            <div class="modalCaption"></div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>	
 					</div>
 				</div>
 
@@ -137,12 +192,12 @@
 
 		<!-- Scripts -->
 
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery-3.1.0.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/modal.js?4"></script>
+			<script src="assets/js/portfolio"></script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
