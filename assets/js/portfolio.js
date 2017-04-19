@@ -1,6 +1,6 @@
 window.onload = function() {
 
-	for (var index = 0; index < 14; index++) {
+	for (var index = 0; index < document.querySelectorAll(".modalImgPre").length; index++) {
 
 		var modal = document.getElementsByClassName("modalDiv")[index];
 
